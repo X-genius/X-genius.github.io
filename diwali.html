@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DIWALI</title>
+    <link rel="icon" href="diw.png">
+    <link rel="stylesheet" href="diwali.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>HAPPY DIWALI</h1>
+    <div class="a"><b>HAPPY DIWALI</b> all of the guys for me and my family side stay blessed and plss respect your elder and love your youngers</div>
+    <img src="diwimg.jpg" class="block">
+    
+    <p id="rectangle"></p>
+    <script>
+    var countdown=new Date("Oct 27,2019 12:00:00").getTime();
+    var x=setInterval(function()
+    {
+      var now=new Date().getTime();
+      var dis=countdown-now;
+      var day=Math.floor(dis/(1000*60*60*24));
+      var hour=Math.floor(dis % (1000*60*60*24)/(1000*60*60));
+      var min=Math.floor(dis % (1000*60*60)/(1000*60));
+      var sec=Math.floor(dis % (1000*60)/(1000));
+        
+      document.getElementById("rectangle").innerHTML=day+"d "+hour+"hr "+min+"min "+sec+"sec ";
+        
+        if(dis<0)
+            {
+                clearInterval(x);
+                document.getElementById("rectangle").innerHTML="EXPIRED";
+            }
+    },1000);
+    </script>
+</body>
+
+</html>

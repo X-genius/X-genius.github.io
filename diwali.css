@@ -1,0 +1,35 @@
+body
+{
+    background-image:url(ganesh.jpg);
+    width: 100%;
+    min-height: 100%;
+    text-align: center;
+}
+
+h1
+{
+    font-size: 60px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px black;
+}
+
+.a
+{
+    font-size: 40px;
+}
+
+.block
+{   
+    margin-top: 30px;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+p
+{
+   font-size: 60px;
+   margin-top: 30px;
+   color: black;
+}
